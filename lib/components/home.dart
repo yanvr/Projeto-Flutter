@@ -12,7 +12,7 @@ class Home extends StatelessWidget {
         title: const Text("Home"),
         actions: <Widget>[
           IconButton(
-              onPressed: () => _abreOutraTela(context, const AdicionarTarefa()),
+              onPressed: () => _abreOutraTela(context, AdicionarTarefa()),
               icon: const Icon(
                 Icons.add,
                 color: Colors.white,

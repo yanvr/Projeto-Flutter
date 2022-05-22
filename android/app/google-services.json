@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "121227670784",
+    "project_id": "taskmanager-9b8ec",
+    "storage_bucket": "taskmanager-9b8ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121227670784:android:3aa66a406f9a7b6f3bafe5",
+        "android_client_info": {
+          "package_name": "com.fatec.gerenciador_tarefas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121227670784-4932m9r0sd435rto23d3r9t4ocd0s9fm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARx8quZ21JS2svFhYdiETKCAkD6dYVUas"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121227670784-4932m9r0sd435rto23d3r9t4ocd0s9fm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
