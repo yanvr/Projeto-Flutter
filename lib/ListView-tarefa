@@ -1,0 +1,18 @@
+import 'package:flutter/material.dart';
+import 'package:Projeto-Flutter/firebase_options.dart';
+import 'package:Projeto-Flutter/main.dart'
+
+final List<String> trf = <String>['A', 'B', 'C'];
+final List<int> colorCodes = <int>[600, 500, 100];
+
+ListView.builder(
+  padding: const EdgeInsets.all(8),
+  itemCount: trf.length,
+  itemBuilder: (BuildContext context, int index) {
+    return Container(
+      height: 50,
+      color: Colors.amber[colorCodes[index]],
+      child: Center(child: Text('Tarefa ${trf[index]}')),
+    );
+  }
+);
