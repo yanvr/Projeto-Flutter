@@ -1,18 +1,43 @@
 import 'package:flutter/material.dart';
-import 'package:Projeto-Flutter/firebase_options.dart';
-import 'package:Projeto-Flutter/main.dart'
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:gerenciador_tarefas/models/Tarefa.dart';
+import 'package:gerenciador_tarefas/repositories/itarefa_repository.dart';
 
-final List<String> trf = <String>['A', 'B', 'C'];
-final List<int> colorCodes = <int>[600, 500, 100];
 
-ListView.builder(
-  padding: const EdgeInsets.all(8),
-  itemCount: trf.length,
-  itemBuilder: (BuildContext context, int index) {
-    return Container(
-      height: 50,
-      color: Colors.amber[colorCodes[index]],
-      child: Center(child: Text('Tarefa ${trf[index]}')),
+
+void main() {
+  runApp(
+    MyApp(
+      items: List<String>.generate(<id>, (i) => 'tarefa $i'),
+    ),
+  );
+}
+
+class MyApp extends StatelessWidget {
+  final List<String> items;
+
+  const MyApp({super.key, required this.items});
+
+  @override
+  Widget build(BuildContext context) {
+    const title = 'tarefas ativas';
+
+    return MaterialApp(
+      title: title,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text(title),
+        ),
+        body: ListView.builder(
+          itemCount: items.length,
+          itemBuilder: (context, index) {
+            return ListTile(
+              title: Text(items[index]),
+            );
+          },
+        ),
+      ),
     );
   }
-);
+}
+
